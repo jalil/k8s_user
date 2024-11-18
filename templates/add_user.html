@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Add User to Group</h2>
+<form action="{{ url_for('add_user') }}" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="group">Group:</label>
+    <input type="text" id="group" name="group" required>
+    <button type="submit">Add User</button>
+</form>
+
+{% if message %}
+<p>{{ message }}</p>
+{% endif %}
+{% endblock %}
+

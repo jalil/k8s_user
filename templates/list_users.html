@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Users in Groups</h2>
+<ul>
+    {% for group, users in user_groups.items() %}
+    <li><strong>{{ group }}:</strong> {{ users | join(', ') }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
+

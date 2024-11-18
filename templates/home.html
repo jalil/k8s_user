@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Welcome to Kubernetes User & Group Management</h2>
+<p>Use the links below to manage groups and users:</p>
+<ul>
+    <li><a href="{{ url_for('add_group') }}">Add Group</a></li>
+    <li><a href="{{ url_for('add_user') }}">Add User</a></li>
+    <li><a href="{{ url_for('list_groups_page') }}">List Groups</a></li>
+    <li><a href="{{ url_for('list_users_page') }}">List Users</a></li>
+</ul>
+{% endblock %}
+
