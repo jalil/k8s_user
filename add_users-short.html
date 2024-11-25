@@ -1,0 +1,16 @@
+<h2>Add Multiple Users to a Group</h2>
+<form method="POST">
+    <label for="short_names">Short Names (comma-separated):</label>
+    <input type="text" name="short_names" required>
+    <label for="usernames">Usernames (comma-separated):</label>
+    <input type="text" name="usernames" required>
+    <label for="group">Group/Namespace:</label>
+    <input type="text" name="group" required>
+    <label for="role">Role:</label>
+    <select name="role" required>
+        <option value="admin">Admin</option>
+        <option value="read-only">Read-Only</option>
+    </select>
+    <button type="submit">Add Users</button>
+</form>
+<p>{{ message }}</p>
