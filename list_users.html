@@ -1,0 +1,15 @@
+<h2>Users and Their Roles</h2>
+<table border="1">
+    <tr>
+        <th>Username</th>
+        <th>Group/Namespace</th>
+        <th>Role</th>
+    </tr>
+    {% for username, details in user_roles.items() %}
+    <tr>
+        <td>{{ username }}</td>
+        <td>{{ details.group }}</td>
+        <td>{{ details.role }}</td>
+    </tr>
+    {% endfor %}
+</table>
